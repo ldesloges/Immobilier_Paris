@@ -25,7 +25,7 @@ df['Commune'] = df['Commune'].str.upper().str.replace('-', ' ').str.strip()
 
 
 
-with open('merged-2.geojson', 'r', encoding='utf-8') as f:
+with open('JSON/merged-2.geojson', 'r', encoding='utf-8') as f:
     geo_data = json.load(f)
 
 for feature in geo_data['features']:
